@@ -1,5 +1,23 @@
 import tkinter as tk
 
+class reguly:
+    def __init__(self):
+        self.napiecie = 0
+    def wybierzNapiecie(self, input):
+        self.napiecie = input
+        
+class silnik:
+    def __init__(self):
+        self.napiecie = 0
+        self.x2 = 0
+        self.x3 = 0
+        self.x4 = 0
+        self.x5 = 0
+    def pobierzDane():
+        pass
+
+
+
 root = tk.Tk()
 root.title("System ekspercki - silniki elektryczne")
 root.resizable(width=False, height=False)

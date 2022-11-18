@@ -47,6 +47,3 @@ class DataBase:
                             self.question[i][j] = str(self.question[i][j]) + ' - ' + str(self.question[i].pop(j + 1))
                         elif (j + 1) < len(self.question[i]):
                             self.question[i][j] = str(self.question[i][j]) + ' - ' + str(self.question[i].pop(j + 1))
-
-
-

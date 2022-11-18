@@ -1,14 +1,19 @@
 import csv as csv
+from tkinter import messagebox
+
 
 class DataBase:
 
     def __init__(self, path):
         # read data from file
         self.data = []
-        with open(path, newline = '') as file:
-            reader = csv.reader(file, delimiter = ';')
-            for row in reader:
-                self.data.append(row)
+        try:
+            with open(path, newline = '') as file:
+                reader = csv.reader(file, delimiter = ';')
+                for row in reader:
+                    self.data.append(row)
+        except:
+            messagebox.showerror("Unable to load file", "An error occurred while loading the data file")
         self.category = self.data.pop(0)
 
     def generate_questions(self):

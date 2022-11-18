@@ -1,3 +1,5 @@
+import csv as csv
+
 class DataBase:
 
     def __init__(self, path):
@@ -29,7 +31,7 @@ class DataBase:
         # sort answers to questions
         for i in range(len(self.question)):
             self.question[i].sort()
-            # if float data type - reduce number of answers to question
+            # if float data type - reduce number of answers to question (5 max)
             if len(self.question[i]) > 5 and type(self.question[i][0]) == float:
                 if len(self.question[i]) > 5:
                     for j in range(0, len(self.question[i]), 1):

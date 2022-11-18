@@ -1,8 +1,11 @@
 import tkinter as tk
+import csv as csv
 
-class Question:
-    def __init__(self):
-        self.Value = 0
+from database import DataBase
+
+class Rules:
+    
+
     def getQuestion(self):
         pass
     def question(self, y):
@@ -16,19 +19,11 @@ class Question:
         self.boxValue_3 = tk.Radiobutton(frame, text="3", variable=self.Value, value=3)
         self.boxValue_3.place(x=310, y=y, height = 30, width = 100)
     
-        
-class Engine:
-    def __init__(self):
-        self.Voltage = 0
-        self.x2 = 0
-        self.x3 = 0
-        self.x4 = 0
-        self.x5 = 0
-    def getData():
-        pass
 
+a = DataBase('data\silniki.csv')
+a.generate_questions()
 
-
+"""
 root = tk.Tk()
 root.title("Expert system - electrical engines")
 #root.resizable(width=False, height=False)
@@ -60,7 +55,8 @@ resultsButton = tk.Button(resultsFrame, text="Results", padx=10, pady=10, fg="bl
 resultsButton.pack()
 
 ############################################
-voltage = Question()
-voltage.question(50)
+#voltage = question()
+#voltage.question(50)
 
 root.mainloop()
+"""

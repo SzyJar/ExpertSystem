@@ -1,0 +1,46 @@
+nazwa;moc;obroty;napiecie;srednica walka;rodzaj montazu
+Silnik Besel SEMh71-2A;0.25;2720;230;14;Lapowy
+Silnik Besel SEh71-4A;0.25;1380;230;14;Lapowy
+Silnik Besel SEKh63-2B;0.25;2840;230;11;Kolnierzowy
+Silnik Besel SEKh63-4C;0.25;1360;230;11;Kolnierzowy
+Silnik Besel SELh63-2B1;0.25;2840;230;11;Kolnierzowo-Lapowy
+Silnik Besel SELh63-4C1;0.25;1360;230;11;Kolnierzowo-Lapowy
+Silnik Besel Sh63-2B;0.25;2780;400;11;Lapowy
+Silnik Besel Sh63x-4C;0.25;1380;400;11;Lapowy
+Silnik Besel Sh71-6B;0.25;860;400;14;Lapowy
+Silnik Besel Sh80-8B;0.25;680;400;19;Lapowy
+Silnik Besel SKh63-2B;0.25;2780;400;11;Kolnierzowy
+Silnik Besel SKh71-4A1;0.25;1380;400;14;Kolnierzowy
+Silnik Besel SKh71-6B;0.25;860;400;14;Kolnierzowy
+Silnik Besel SKh80-8B;0.25;680;400;19;Kolnierzowy
+Silnik Besel SEh71-2C;0.75;2820;230;14;Lapowy
+Silnik Besel SEMh90-4S;0.75;1340;230;24;Lapowy
+Silnik Besel SEKh71-2C;0.75;2820;230;14;Kolnierzowy
+Silnik Besel SEKh80-4B;0.75;1410;230;19;Kolnierzowy
+Silnik Besel SELh71-2C;0.75;2820;230;14;Kolnierzowo-Lapowy
+Silnik Besel SELh80-4B;0.75;1410;230;19;Kolnierzowo-Lapowy
+Silnik Besel Sh80-2A;0.75;2800;400;19;Lapowy
+Silnik Besel Sh80-4B;0.75;1380;400;19;Lapowy
+Silnik Besel Sh90-6S;0.75;900;400;24;Lapowy
+Silnik Celma Indukta SG100L8A;0.75;710;400;28;Lapowy
+Silnik Besel SKh80-2A;0.75;2800;400;19;Kolnierzowy
+Silnik Besel SKh80-4B1;0.75;1380;400;19;Kolnierzowy
+Silnik Besel SKh90-6S1;0.75;900;400;24;Kolnierzowy
+Silnik Besel SKhR90x-8M;0.75;670;400;24;Kolnierzowy
+Silnik Besel SEMh80-2D;1.5;2700;230;19;Lapowy
+Silnik Besel SEMhR90-4M;1.5;1340;230;24;Lapowy
+Silnik Besel SEKh80-2C;1.5;2740;230;19;Kolnierzowy
+Silnik Besel SEMKhR90-4M;1.5;1340;230;24;Kolnierzowy
+Silnik Besel SELh80-2C1;1.5;2740;230;19;Kolnierzowo-Lapowy
+Silnik Besel SEMLhR90-4M;1.5;1340;230;24;Kolnierzowo-Lapowy
+Silnik Besel Sh90-2S;1.5;2800;400;24;Lapowy
+Silnik Besel Sh90-4L;1.5;1380;400;24;Lapowy
+Silnik Celma Indukta 2SIE100L6;1.5;950;400;28;Lapowy
+Silnik Celma Indukta SG112M8;1.5;720;400;28;Lapowy
+Silnik Celma Indukta SKH90S2;1.5;2835;400;24;Kolnierzowy
+Silnik Besel SKh90-4L;1.5;1380;400;24;Kolnierzowy
+Silnik Celma Indukta 2SIEK100L6;1.5;950;400;28;Kolnierzowy
+Silnik Celma Indukta SKG112M8;1.5;720;400;28;Kolnierzowy
+Silnik  3SIEL90L4-G B34C1;1.5;1450;400;24;Kolnierzowo-Lapowy
+Silnik Celma Indukta 3SIEL90L6A;1.5;940;400;24;Kolnierzowo-Lapowy
+Silnik Celma Indukta 3SIEL112M8;1.5;700;400;28;Kolnierzowo-Lapowy

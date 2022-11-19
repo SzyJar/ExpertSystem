@@ -40,6 +40,13 @@ class Expert:
                                        value=str(text), variable=self.answer[-1], tristatevalue=0))
         self.box[-1].place(relx=x, rely=y, height = 30, width = 150)
 
+    def type_check(self, input):
+        try:
+            a = float(input)
+            return(True)
+        except:
+            return(False)
+
     def search(self, empty=''):
         self.mask = []
         # Make True / False mask
@@ -67,22 +74,28 @@ class Expert:
                         if float(self.data[j][i+1]) >= part1float and float(self.data[j][i+1]) <= part2float:
                             self.mask[i].append(True)
                         else:
-                            self.mask[i].append(False)
+                            self.mask[i].append(False)                         
                     except:
                         self.mask[i].append(False)
+                elif self.type_check(self.data[j][i+1]) and float(self.data[j][i+1]) == float(self.answer[i].get()):
+                    self.mask[i].append(True)
                 else:       
                     self.mask[i].append(False)
         # apply mask on data list
         for i in range(len(self.mask[0])):
             notMatch = 0
+            notMatchCategory = []
+            notMatchValue = []
             for j in range(len(self.mask)):
                 if self.mask[j][i] == False:
                     notMatch = notMatch + 1
+                    notMatchCategory.append(self.category[j + 1])
+                    notMatchValue.append(self.data[i][j + 1])
+                    lastJ = j
             if notMatch == 0:
                 self.exactList.insert('end', self.data[i][0])
             if notMatch == 1:
-                self.closeList.insert('end', self.data[i][0]) 
-
+                self.closeList.insert('end', f"{self.data[i][0]} ({notMatchCategory[-1]}: {self.answer[lastJ].get()} -> {notMatchValue[-1]})") 
         if self.exactList.size() == 0:
             self.exactList.insert('end', "None found")
         if self.closeList.size() == 0:

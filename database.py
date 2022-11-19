@@ -8,7 +8,7 @@ class DataBase:
         # read data from file
         self.data = []
         try:
-            with open(path, newline = '') as file:
+            with open(path, "r", newline = '') as file:
                 reader = csv.reader(file, delimiter = ';')
                 for row in reader:
                     self.data.append(row)

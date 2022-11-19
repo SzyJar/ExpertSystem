@@ -3,13 +3,12 @@ import tkinter as tk
 from database import DataBase
 from expert import Expert
 
-
 root = tk.Tk()
 
 # Application settings
-root.title("Expert system - electrical engines")
-dataFilePath = 'data\silniki.csv'
-disableQuestionText = 'Nie wiem'
+dataFilePath = 'data\data_template.csv'
+root.title("Expert system\t\t" + dataFilePath)
+disableQuestionText = 'Show all'
 ###
 
 engines = DataBase(dataFilePath)

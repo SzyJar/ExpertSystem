@@ -5,25 +5,30 @@ from expert import Expert
 
 
 root = tk.Tk()
+
+# Application settings
 root.title("Expert system - electrical engines")
+dataFilePath = 'data\silniki.csv'
+disableQuestionText = 'Nie wiem'
+###
 
-# Data file path
-dataFile = 'data\silniki.csv'
-
-engines = DataBase(dataFile)
+engines = DataBase(dataFilePath)
 engines.generate_questions()
 
-expert = Expert(engines.data, engines.question)
-expert.draw_UI(root, dataFile)
+expert = Expert(engines)
+expert.main_UI(root, dataFilePath, disableQuestionText)
 
 for i in range(len(engines.question)):
     x = 0.01 # x pos for first question
-    spacingX = 0.2 # spacing for questions
-    y = 0.01 # y pos for first question
+    spacingX = 0.166 # spacing for questions
+    y = 0.05 # y pos for first question
     spacingY = 0.1 # spacing for questions
     
     for j in range(len(engines.question[i])):
         expert.draw_radio_button(engines.question[i][j],x + spacingX * j,
+                                 y + spacingY * i)
+    # last radio box - disable question
+    expert.draw_radio_button(disableQuestionText,x + spacingX * 5,
                                  y + spacingY * i)
 
 root.mainloop()

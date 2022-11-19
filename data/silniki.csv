@@ -1,4 +1,4 @@
-nazwa;moc;obroty;napiecie;srednica walka;rodzaj montazu;nowe
+Nazwa;Moc [kW];Obroty [rpm];Napiecie [V];Srednica walu [mm];Rodzaj montazu
 Silnik Besel SEMh71-2A;0.25;2720;230;14;Lapowy
 Silnik Besel SEh71-4A;0.25;1380;230;14;Lapowy
 Silnik Besel SEKh63-2B;0.25;2840;230;11;Kolnierzowy

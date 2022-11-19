@@ -35,7 +35,11 @@ class DataBase:
                     pass
         # sort answers to questions
         for i in range(len(self.question)):
-            self.question[i].sort()
+            try:
+                self.question[i].sort()
+            except:
+                messagebox.showwarning("Mismatch data type",
+                                       f'"{self.category[i+1]}" - Category contains more than one data type.\n Possible data loss!')
             # if float data type - reduce number of answers to question (5 max)
             if len(self.question[i]) > 5 and type(self.question[i][0]) == float:
                 if len(self.question[i]) > 5:

@@ -24,7 +24,7 @@ class Expert:
         self.exactList = tk.Listbox(self.resultsFrame,  bg ="#cccccc", fg="#000000", height=19, width=50,
                                     font=("Tahoma 12"), selectmode="single", relief="solid")
         self.exactList.place(width=1080, height=150, x=10, y=45)
-        self.closeLabel = tk.Label(self.resultsFrame, text="Close match (1 category different):", bg="#ffffff", fg="#000000", font=("Tahoma 12 bold"), justify="left")
+        self.closeLabel = tk.Label(self.resultsFrame, text="Close match (Difference of one answer):", bg="#ffffff", fg="#000000", font=("Tahoma 12 bold"), justify="left")
         self.closeLabel.place(height=25, x=10, y=205)
         self.closeList = tk.Listbox(self.resultsFrame,  bg ="#cccccc", fg="#000000", height=19, width=50,
                                     font=("Tahoma 12"), selectmode="single", relief="solid")

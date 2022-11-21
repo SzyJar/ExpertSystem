@@ -6,7 +6,7 @@ from expert import Expert
 root = tk.Tk()
 
 # Application settings
-dataFilePath = 'data\drinks.csv'
+dataFilePath = 'data\silniki.csv'
 root.title("Expert system\t\t" + dataFilePath)
 disableQuestionText = 'Show all'
 ###
